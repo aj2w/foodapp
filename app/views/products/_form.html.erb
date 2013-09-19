@@ -1,0 +1,10 @@
+<%= form_for([@product]) do |f| %>
+<%= f.text_field :name, :placeholder => "What is it?" %>
+<%= f.text_field :description, :placeholder => "Describe it" %>
+<%= f.text_field :location, :placeholder => "Where are you?" %>
+<%= f.text_field :price, :placeholder => "How much is it?" %>
+<%= f.text_field :storage, :placeholder => "How have you stored it?" %>
+<%= f.text_field :pickup, :placeholder => "When to pick it up?" %>
+
+<%= f.submit "Submit", {:class => "btn btn-primary"} %>
+<% end %>
