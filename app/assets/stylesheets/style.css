@@ -1,0 +1,11 @@
+body {
+  background: url(cover.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.welcome-jumbotron {
+  margin-top: 75px;
+  background-color:rgba(200,24,24,0.5);
+  padding: 45px;
+  color: white;
+}
