@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130919191806) do
+ActiveRecord::Schema.define(version: 20130919192107) do
 
   create_table "product_wishlists", force: true do |t|
     t.integer "wishlist_id"
@@ -26,6 +26,11 @@ ActiveRecord::Schema.define(version: 20130919191806) do
     t.date   "expiration"
     t.string "storage"
     t.string "pickup"
+  end
+
+  create_table "products_wishlists", force: true do |t|
+    t.integer "wishlist_id"
+    t.integer "product_id"
   end
 
   create_table "wishlists", force: true do |t|
