@@ -4,11 +4,13 @@
   <div class="jumbotron welcome-jumbotron">
     <h1>Find something good to eat</h1>
     <br>
+      <div class="welcome-links-container">
     <p>
-      <a class="btn btn-lg btn-primary" href="../../components/#navbar">View navbar docs &raquo;</a>
+      <%= link_to "Buying? &raquo;".html_safe, root_path, {:class => "btn btn-lg btn-primary", :id => "new-product-link", remote: true} %>
 
-      <a class="btn btn-lg btn-primary" href="../../components/#navbar">View navbar docs &raquo;</a>
+      <%= link_to "Selling? &raquo;".html_safe, new_product_path, {:class => "btn btn-lg btn-primary", :id => "new-product-link", remote: true} %>
     </p>
+  </div>
   </div>
 
 </div>
