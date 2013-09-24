@@ -1,6 +1,10 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.all
+    if params[:search].present?
+      @products = Product.where(:name => params[:search])
+    else
+      @products = Product.all
+    end
   end
 
   def new
@@ -11,14 +15,14 @@ class ProductsController < ApplicationController
     @product = Product.new(product_params)
 
     # if user_signed_in?
-      @product.save
-      redirect_to root_path
+    @product.save
+    redirect_to root_path
     # else
     #   redirect_to new_user_session_path
     # end
   end
 
-private
+  private
   #This is all my privates below
   def product_params
     params.require(:product).permit(:name, :description, :location, :price, :storage, :pickup)
