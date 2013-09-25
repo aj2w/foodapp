@@ -4,12 +4,12 @@
   <div class="well">
 
       <div class="pull-left">
-        <img class="media-object thumbnail-preview" src='<%= product.image_url %>' alt="..." height=100px>
+        <img class="media-object thumbnail-preview" src='<%= product.image.url %>' alt="..." height=100px>
       </div>
       <h3><%= product.name %></h3>
       <h4><%= product.location %>&nbsp$<%= product.price %></h4>
       <div class="pull-right">
-        <button class="btn btn-primary">Select</button>
+        <a href="/products/<%= product.id %>" class="btn btn-primary">Select</a>
       </div>
       <p><%= product.description %></p>
 
