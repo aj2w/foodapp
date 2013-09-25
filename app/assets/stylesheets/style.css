@@ -9,3 +9,7 @@ body {
   padding: 45px;
   color: white;
 }
+
+.thumbnail-preview {
+  margin: 10px;
+}

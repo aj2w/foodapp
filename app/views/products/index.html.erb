@@ -1,16 +1,19 @@
 <% @products.each do |product| %>
-<div class="row">
-  <div class="col-md-1"></div>
-  <div class="col-md-5">
-    <div class="well">
-      <p>
-        <h3><%= product.name %></h3>
-        <h4><%= product.location %>&nbsp<%= product.price %></h4>
-        <p><%= product.description %></p>
-        <img src='<%= product.image_url %>' width=250px/>
-      </p>
-    </div>
+<div class="col-md-1"></div>
+<div class="col-md-5">
+  <div class="well">
+
+      <div class="pull-left">
+        <img class="media-object thumbnail-preview" src='<%= product.image_url %>' alt="..." height=100px>
+      </div>
+      <h3><%= product.name %></h3>
+      <h4><%= product.location %>&nbsp$<%= product.price %></h4>
+      <div class="pull-right">
+        <button class="btn btn-primary">Select</button>
+      </div>
+      <p><%= product.description %></p>
+
   </div>
-  <div class="col-md-6"></div>
 </div>
+<!-- <div class="col-md-6"></div> -->
 <% end %>
