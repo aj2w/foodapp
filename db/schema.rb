@@ -13,19 +13,12 @@
 
 ActiveRecord::Schema.define(version: 20130919192107) do
 
-  create_table "product_wishlists", force: true do |t|
-    t.integer "wishlist_id"
-    t.integer "product_id"
-  end
-
   create_table "products", force: true do |t|
     t.string "name"
     t.string "description"
     t.string "location"
     t.float  "price"
-    t.date   "expiration"
-    t.string "storage"
-    t.string "pickup"
+    t.string "image_url"
   end
 
   create_table "products_wishlists", force: true do |t|

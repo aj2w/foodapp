@@ -1,3 +1,16 @@
 <% @products.each do |product| %>
-<%= product.name %>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <div class="well">
+      <p>
+        <h3><%= product.name %></h3>
+        <h4><%= product.location %>&nbsp<%= product.price %></h4>
+        <p><%= product.description %></p>
+        <img src='<%= product.image_url %>' width=250px/>
+      </p>
+    </div>
+  </div>
+  <div class="col-md-6"></div>
+</div>
 <% end %>

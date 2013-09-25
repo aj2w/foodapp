@@ -25,6 +25,6 @@ class ProductsController < ApplicationController
   private
   #This is all my privates below
   def product_params
-    params.require(:product).permit(:name, :description, :location, :price, :storage, :pickup)
+    params.require(:product).permit(:name, :description, :location, :price, :image_url)
   end
 end

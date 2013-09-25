@@ -5,9 +5,7 @@ class CreateProducts < ActiveRecord::Migration
       t.string :description
       t.string :location
       t.float :price
-      t.date :expiration
-      t.string :storage
-      t.string :pickup
+      t.string :image_url
     end
   end
 end
