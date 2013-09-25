@@ -9,6 +9,9 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'devise'
+gem 'paperclip'
+gem 'aws-sdk'
+gem 'dotenv-rails', :groups => [:development, :test]
 # gem 'gmaps4rails'
 # gem "geocoder", "~> 1.1.8"
 
