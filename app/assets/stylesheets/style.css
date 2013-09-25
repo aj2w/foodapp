@@ -13,3 +13,13 @@ body {
 .thumbnail-preview {
   margin: 10px;
 }
+
+.new-user-form {
+  color: white;
+  padding: 50px;
+margin:auto;
+width:350px;
+background-color:rgba(0,0,0,0.5);
+text-shadow: 1px 1px #000000;
+
+}

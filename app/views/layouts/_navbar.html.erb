@@ -22,7 +22,9 @@
       </li>
 </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Link</a></li>
+      <% unless user_signed_in? %>
+      <li><a href="/users/sign_up">Create Account</a></li>
+      <% end %>
       <li class="dropdown">
         <% if user_signed_in? %>
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= current_user.email %> <b class="caret"></b></a>
