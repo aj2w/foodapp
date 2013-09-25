@@ -21,5 +21,14 @@ margin:auto;
 width:350px;
 background-color:rgba(0,0,0,0.5);
 text-shadow: 1px 1px #000000;
+}
 
+.notice {
+  background-color:rgba(250,250,250,0.5);
+  line-height: 2;
+}
+
+.alert {
+  background-color:rgba(250,250,250,0.5);
+  line-height: 2;
 }

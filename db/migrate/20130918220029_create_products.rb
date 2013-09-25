@@ -6,6 +6,7 @@ class CreateProducts < ActiveRecord::Migration
       t.string :location
       t.float :price
       t.string :image_url
+      t.integer :user_id
     end
   end
 end
