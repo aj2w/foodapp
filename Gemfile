@@ -12,8 +12,8 @@ gem 'devise'
 gem 'paperclip'
 gem 'aws-sdk'
 gem 'dotenv-rails', :groups => [:development, :test]
-# gem 'gmaps4rails'
-# gem "geocoder", "~> 1.1.8"
+gem 'gmaps4rails'
+gem "geocoder"
 
 
 group :doc do

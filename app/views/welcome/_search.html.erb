@@ -1,4 +1,6 @@
-<%= form_tag({:controller => "products", :action => "index"}, method: :get, :class => "", :role => "search") do %>
-<%= text_field_tag :search, params[:search], :class => "", placeholder: "Search by food" %>
-<%= submit_tag "Go!", :name => nil, :class => "btn btn-default" %>
+<%= form_tag products_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :search, params[:search], placeholder: "Search by location" %>
+    <%= submit_tag "Search", :name => nil, :class => "btn btn-primary" %>
+  </p>
 <% end %>

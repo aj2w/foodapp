@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   def index
     if params[:search].present?
-      @products = Product.where(:name => params[:search])
+      @products = Product.near(params[:search], 50)
     else
       @products = Product.all
     end
@@ -24,6 +24,11 @@ class ProductsController < ApplicationController
     # else
     #   redirect_to new_user_session_path
     # end
+  end
+
+  def test
+    @json = Product.all.to_gmaps4rails
+    binding.pry
   end
 
   private
