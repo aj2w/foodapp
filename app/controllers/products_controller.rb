@@ -2,8 +2,10 @@ class ProductsController < ApplicationController
   def index
     if params[:search].present?
       @products = Product.near(params[:search], 50)
+      @json = Product.near(params[:search], 50).to_gmaps4rails
     else
       @products = Product.all
+      @json = Product.all.to_gmaps4rails
     end
   end
 
@@ -26,9 +28,8 @@ class ProductsController < ApplicationController
     # end
   end
 
-  def test
+  def location
     @json = Product.all.to_gmaps4rails
-    binding.pry
   end
 
   private
