@@ -6,6 +6,10 @@
 <%= f.text_field :price, :placeholder => "How much is it?", :class => "welcome-form" %>
 <%= f.file_field :image, :class => "welcome-form" %>
 
+<% if user_signed_in? %>
+<%= f.hidden_field :user_id, :value => current_user.id %>
+<% end %>
+
 <%= f.submit "Submit", {:class => "btn btn-primary"} %>
 <% end %>
 </p>

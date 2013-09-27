@@ -2,10 +2,11 @@
 <div class="col-md-5">
 <% @products.each do |product| %>
   <div class="well">
-
+    <% if product.image? %>
     <div class="pull-left">
       <img class="media-object thumbnail-preview" src='<%= product.image.url %>' alt="..." height=100px>
     </div>
+    <% end %>
     <h3><%= product.name %></h3>
     <h4><%= product.location %>&nbsp$<%= product.price %></h4>
     <div class="pull-right">

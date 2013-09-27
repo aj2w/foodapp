@@ -20,12 +20,12 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
 
-    # if user_signed_in?
+    if user_signed_in?
     @product.save
-    redirect_to root_path
-    # else
-    #   redirect_to new_user_session_path
-    # end
+    redirect_to products_path
+    else
+      redirect_to new_user_session_path
+    end
   end
 
   def location
@@ -35,6 +35,6 @@ class ProductsController < ApplicationController
   private
   #This is all my privates below
   def product_params
-    params.require(:product).permit(:name, :description, :location, :price, :image_url, :image)
+    params.require(:product).permit(:name, :description, :location, :price, :image_url, :image, :user_id)
   end
 end
