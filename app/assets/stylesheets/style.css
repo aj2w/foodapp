@@ -42,6 +42,11 @@
   /*color: white;*/
 }
 
+#main-map {
+  width: auto;
+
+}
+
 /*NEW CSS*/
 /* BOOTSTRAP 3.x GLOBAL STYLES
 -------------------------------------------------- */
@@ -98,8 +103,8 @@ body {
 
 /* Pad the edges of the mobile views a bit */
 .marketing {
-  padding-left: 15px;
-  padding-right: 15px;
+  /*padding-left: 15px;*/
+  /*padding-right: 15px;*/
 }
 
 /* Center align the text within the three columns below the carousel */
