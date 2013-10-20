@@ -3,6 +3,7 @@
   background-size: cover;
 }*/
 
+
 .welcome-jumbotron {
   margin-top: 75px;
   background-color:rgba(200,24,24,0.5);
@@ -15,12 +16,13 @@
 }
 
 .new-user-form {
-  color: white;
+  color: black;
   padding: 50px;
-  margin:auto;
+  margin: auto;
+  margin-top: 70px;
   width:450px;
-  background-color:rgba(0,0,0,0.5);
-  text-shadow: 1px 1px #000000;
+  /*background-color:rgba(0,0,0,0.5);*/
+  /*text-shadow: 1px 1px #000000;*/
 }
 
 .notice {
