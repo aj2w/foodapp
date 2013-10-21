@@ -4,6 +4,19 @@
 }*/
 
 
+.navbar-inverse .navbar-brand {
+color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+color: white;
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+border-top-color: white;
+border-bottom-color: white;
+}
+
 .welcome-jumbotron {
   margin-top: 75px;
   background-color:rgba(200,24,24,0.5);
