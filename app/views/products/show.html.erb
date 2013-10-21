@@ -1,23 +1,24 @@
-<div class="col-md-1"></div>
-
-<div class="well product-show-main col-md-6">
-  <%= image_tag @product.image.url(:medium) %>
-  <h1><%= @product.name %></h1>
-  <h3><%= @product.location %>&nbsp $<%= @product.price %></h3>
-  <p><%= @product.description %></p>
-</div>
-<div class="col-md-1"></div>
-<div class="col-md-3">
-  <div class="well">
-    <p>Listed by <%= @product.user.email %></p>
-    <p><%= link_to "User Profile", root_path %>
-    </div>
-    <div class="well">
-      <%= gmaps(:markers => { :data => @json }, :map_options => { :auto_adjust => true, :auto_zoom => false, :zoom => 16 }) %>
-
-    </div>
-  </div>
-  <!-- <div class="well product-show-main col-md-3"> -->
-
 
   <div class="col-md-1"></div>
+
+  <div class="well product-show-main col-md-6">
+    <%= image_tag @product.image.url(:medium) %>
+    <h1><%= @product.name %></h1>
+    <h3><%= @product.location %>&nbsp $<%= @product.price %></h3>
+    <p><%= @product.description %></p>
+  </div>
+  <div class="col-md-1"></div>
+  <div class="col-md-3">
+    <div class="well">
+      <p>Listed by <%= @product.user.email %></p>
+      <p><%= link_to "User Profile", root_path %>
+      </div>
+      <div class="well">
+        <%= gmaps(:markers => { :data => @json }, :map_options => { :auto_adjust => true, :auto_zoom => false, :zoom => 16 }) %>
+
+      </div>
+    </div>
+    <!-- <div class="well product-show-main col-md-3"> -->
+
+
+    <div class="col-md-1"></div>

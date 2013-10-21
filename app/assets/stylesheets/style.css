@@ -1,8 +1,8 @@
-/*body {
-  background: url(http://s3.amazonaws.com/FoodApp/cover.jpg) no-repeat center center fixed;
-  background-size: cover;
-}*/
-
+body {
+  /*background: url(http://s3.amazonaws.com/FoodApp/cover.jpg) no-repeat center center fixed;*/
+  /*background-size: cover;*/
+  padding: 90px;
+}
 
 .navbar-inverse .navbar-brand {
 color: white;
