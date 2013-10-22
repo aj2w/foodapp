@@ -11,7 +11,7 @@
   <div class="col-md-3">
     <div class="well">
       <p>Listed by <%= @product.user.email %></p>
-      <p><%= link_to "User Profile", root_path %>
+      <p><a href='/users/<%= @product.user.id %>'>User Profile</a></p>
       </div>
       <div class="well">
         <%= gmaps(:markers => { :data => @json }, :map_options => { :auto_adjust => true, :auto_zoom => false, :zoom => 16 }) %>
