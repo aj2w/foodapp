@@ -14,7 +14,7 @@ gem 'aws-sdk'
 gem 'dotenv-rails', :groups => [:development, :test]
 gem 'gmaps4rails'
 gem "geocoder"
-# gem 'newrelic_rpm'
+gem 'newrelic_rpm'
 
 
 group :doc do
