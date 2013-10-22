@@ -1,5 +1,10 @@
 <div class="col-md-1"></div>
 <div class="col-md-5">
+<% if @products.empty? %>
+<div class="well">
+  No results matched your query
+  </div>
+  <% end %>
 <% @products.each do |product| %>
   <div class="well">
     <% if product.image? %>
